@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Stress Prediction</title>
+
+```
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+        background: linear-gradient(to right, #4facfe, #00f2fe);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        width: 700px;
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .left {
+        width: 50%;
+        background: linear-gradient(to bottom, #4facfe, #00c6ff);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .left h1 {
+        margin-bottom: 10px;
+    }
+
+    .right {
+        width: 50%;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .right h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    input {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        outline: none;
+    }
+
+    input:focus {
+        border-color: #4facfe;
+    }
+
+    button {
+        width: 95%;
+        padding: 10px;
+        background: #4facfe;
+        border: none;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background: #007bff;
+    }
+
+    a {
+        display: block;
+        margin-top: 15px;
+        text-decoration: none;
+        color: #4facfe;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<div class="container">
+
+```
+<div class="left">
+    <h1>Welcome Back</h1>
+    <p>Predict your stress level and improve your lifestyle</p>
+</div>
+
+<div class="right">
+    <h2>Login</h2>
+
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <a href="/signup">Create Account</a>
+</div>
+```
+
+</div>
+
+</body>
+</html>

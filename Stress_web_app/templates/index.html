@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Stress Prediction</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+            text-align: center;
+            padding: 50px;
+        }
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: auto;
+        }
+        input {
+            margin: 10px;
+            padding: 8px;
+            width: 80%;
+        }
+        button {
+            padding: 10px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🎓 Student Stress Prediction</h1>
+
+<div class="box">
+<form action="/predict" method="post">
+
+<input type="number" step="any" name="sleep" placeholder="Sleep Hours" required><br>
+<input type="number" step="any" name="study" placeholder="Study Hours" required><br>
+<input type="number" step="any" name="mobile" placeholder="Mobile Usage" required><br>
+<input type="number" step="any" name="exercise" placeholder="Exercise Hours" required><br>
+<input type="number" step="any" name="relax" placeholder="Relaxation Hours" required><br>
+
+<button type="submit">Predict</button>
+
+</form>
+</div>
+
+</body>
+</html>
